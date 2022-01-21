@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 20vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+header h2{
+    margin-left: 20%;
+    color: rgb(47, 49, 49);
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+nav{
+    background-color: cornflowerblue;
+    height: 10vh;
+    position: sticky;
+    top: 0px;
+    
+}
+nav ul{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+}
+nav ul a{
+    margin: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul a:hover{
+    background-color: white;
+    padding: 5px;
+}
+
+main{
+   
+    height: 150vh;
+    background-color: rgba(33, 72, 201, 0.493);
+    margin-top: 30px;
+    
+}
+
+.container {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+main h1{
+    text-align: center;
+    padding-top: 20px;
+    color: gold;
+    font-weight: bold;
+}
+
+.container div{
+    width: 15%;
+    height: 25vh;
+    background-color:white;
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.548) 10px 20px 10px;
+    border-top-right-radius: 20px;
+}
+.imagens{
+    width: 40%;
+    height: 50%;
+
+}
+.chamewhats{
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    
+}
+
+.chama{
+    width: 100%;
+    position: absolute;
+    right: 20px;
+   
+}
+
+
+
+footer{
+    background-color: rgb(20, 6, 6);
+    height: 15vh;
+    color: white;
+    margin-top: 30px;
+}
+
+footer h2{
+    position: relative;
+    bottom: 0px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+@media screen and (max-width:660px) {
+     main{
+         height: 130vh;
+     }
+   
+
+    header h2{
+        margin: 0px;
+        font-size: 18px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    nav{
+        height: 40vh;
+        
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul a:hover{
+        background-color: white;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 120vh;
+    }
+    .container div{
+        width: 50%;
+       
+    }
+
+    .container div img{
+        width: 40%;
+    }
+
+    main{
+   
+        height: 270vh;
+        background-color: rgba(33, 72, 201, 0.493);
+        margin-top: 30px;
+        
+    }
+
+    .chamewhats{
+        width: 50px;
+        height: 30px;
+        margin-bottom: 100px;
+        right: 0px;
+    }
+}
